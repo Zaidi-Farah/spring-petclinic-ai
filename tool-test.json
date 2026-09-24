@@ -1,0 +1,24 @@
+{
+  "model": "qwen2.5:0.5b-instruct",
+  "messages": [
+    {
+      "role": "user",
+      "content": "List all veterinarians."
+    }
+  ],
+  "tools": [
+    {
+      "type": "function",
+      "function": {
+        "name": "listVets",
+        "description": "Lists all veterinarians in the pet clinic.",
+        "parameters": {
+          "type": "object",
+          "properties": {},
+          "required": []
+        }
+      }
+    }
+  ],
+  "stream": false
+}

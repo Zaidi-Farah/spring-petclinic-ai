@@ -47,7 +47,7 @@ Java 17 or later is required for the build, and the application can run with Jav
 git clone https://github.com/spring-petclinic/spring-petclinic-ai.git
 cd spring-petclinic
 ./mvnw package
-java -jar target/*.jar
+java -jar target/*.jar --spring.profiles.active=postgres
 ```
 
 (On Windows, or if your shell doesn't expand the glob, you might need to specify the JAR file name explicitly on the command line at the end there.)
